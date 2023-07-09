@@ -8,7 +8,7 @@ A simple tool to **hide your Macbook Notch**, a solution for true fullscreen on 
 
 ## Features
 * Both **Dark Mode** and **Light Mode** are fully supported.
-* Integrated Swift's new `MenuBarExtra()`.
+* Integrates Swift's new `MenuBarExtra()` UI.
 
 ## Example
 When Notched Macs emerged, apps & games that didn't update their code were left with a ugly solution to combat the giant forehead.
