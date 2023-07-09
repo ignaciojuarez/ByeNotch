@@ -15,6 +15,20 @@ When Notched Macs emerged, apps & games that didn't update their code were left 
 ![ByeNotch Fullscreen-4](https://github.com/ignaciojuarez/ByeNotch/assets/62676603/0cc33dfc-cfdf-41f0-8d6d-be1bf444e104)
 
 
+## Inatallation
+<img align="left" width="175" alt="Screenshot 2023-07-08 at 6 48 50 PM" src="https://github.com/ignaciojuarez/ByeNotch/assets/62676603/ece32243-bcee-4cf0-95fa-0a9637fffb9b">
+
+to accept and verify the app (I dont pay apple developer fee)
+
+open  -> **System Settings**
+
+click -> **Privacy & Security** (You may need to **scroll down**)
+
+in Security section (you can see ByeNotch us blocked)
+
+then, click -> **"Open Anyway"**
+
+
 ## Support
 Minimum requirements: Xcode 13 on macOS 13 Ventira or newer.
 
