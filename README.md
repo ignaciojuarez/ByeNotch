@@ -1,5 +1,5 @@
 # ByeNotch
-<img align="right" width="350" alt="Screenshot 2023-07-08 at 3 50 15 PM" src="https://github.com/ignaciojuarez/ByeNotch/assets/62676603/56dae85f-cc2d-4ca6-b4b0-5638f1762e45">
+<img align="right" width="350" alt="Screenshot 2023-07-08 at 3 48 44 PM" src="https://github.com/ignaciojuarez/ByeNotch/assets/62676603/1a0770c1-c83d-47d4-bd01-da96715ea897">
 
 [![Platforms - macOS 13+](https://img.shields.io/badge/platforms-macOS%2013+-lightgrey.svg?style=flat)](https://developer.apple.com/swift) ![Swift 5.3-5.8](https://img.shields.io/badge/Swift-5.3–5.8-orange.svg?style=flat) [![Xcode 14](https://img.shields.io/badge/Xcode-14-blue.svg?style=flat)](https://developer.apple.com/swift) [![License: MIT](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/orchetect/MacControlCenterUI/blob/main/LICENSE)
 
@@ -12,11 +12,11 @@ A simple tool to **hide your Macbook Notch**, a solution for true fullscreen on 
 
 ## Example
 When Notched Macs emerged, apps & games that didn't update their code were left with a ugly solution to combat the giant forehead.
-![ByeNotch Fullscreen-4](https://github.com/ignaciojuarez/ByeNotch/assets/62676603/0cc33dfc-cfdf-41f0-8d6d-be1bf444e104)
+![ByeNotch Fullscreen-4](https://github.com/ignaciojuarez/ByeNotch/assets/62676603/4e8ebdff-3f1e-429a-9c23-2df5f4bb0332)
 
 
 ## Inatallation
-<img align="left" width="175" alt="Screenshot 2023-07-08 at 6 48 50 PM" src="https://github.com/ignaciojuarez/ByeNotch/assets/62676603/ece32243-bcee-4cf0-95fa-0a9637fffb9b">
+<img align="left" width="175" alt="Screenshot 2023-07-08 at 6 48 50 PM" src="https://github.com/ignaciojuarez/ByeNotch/assets/62676603/91a03b14-7743-4aa5-98de-0006675e3615">
 
 to accept and verify the app (I dont pay apple developer fee)
 
