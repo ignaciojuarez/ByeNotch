@@ -3,7 +3,7 @@
 
 [![Platforms - macOS 13+](https://img.shields.io/badge/platforms-macOS%2013+-lightgrey.svg?style=flat)](https://developer.apple.com/swift) ![Swift 5.3-5.8](https://img.shields.io/badge/Swift-5.3–5.8-orange.svg?style=flat) [![Xcode 14](https://img.shields.io/badge/Xcode-14-blue.svg?style=flat)](https://developer.apple.com/swift) [![License: MIT](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/orchetect/MacControlCenterUI/blob/main/LICENSE)
 
-A simple tool to **hide your Macbook Notch**, a solution for true fullscreen on MacOS legacy apps & games. Say bye to **Scale to fit below built-in camera**
+A simple tool to **hide your MacBook Notch**, a solution for true fullscreen on MacOS legacy apps & games. Say bye to **Scale to fit below built-in camera**
 
 
 ## Features
