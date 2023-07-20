@@ -7,6 +7,7 @@ A simple tool to **hide your MacBook Notch**, a solution for true fullscreen on 
 Say bye to **Scale to fit below built-in camera**
 
 <img align="center" width="650" alt="Screenshot 2023-07-08 at 3 48 44 PM" src="https://github.com/ignaciojuarez/ByeNotch/assets/62676603/67672a3c-f42a-4a3e-80a1-28bc58211cbb">
+
 (10% more screen compared to apps using 'scale to fit below built-in camera')
 
 ## Features
