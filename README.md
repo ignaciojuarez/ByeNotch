@@ -15,7 +15,7 @@ Say bye to **Scale to fit below built-in camera**
 * Fast and Simple Design
 * Integrates Swift's new `MenuBarExtra()` UI.
 
-## Application
+## Applications
 * Steam Games (ex. EveOnline, Terraria)
 * Most Legacy Apps & Games
 * Most Emulators
