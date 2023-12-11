@@ -10,7 +10,10 @@ import SwiftUI
 @main
 struct ByeNotchApp: App {
     var body: some Scene {
-        MenuBarExtra("MenuBar", systemImage: "hammer"){
+        
+        // new menu bar SwiftUI
+        // replaced entire class of AppDelegate to create this result, works great!
+        MenuBarExtra("MenuBar", systemImage: "return"){
             AppView()
         }
     }

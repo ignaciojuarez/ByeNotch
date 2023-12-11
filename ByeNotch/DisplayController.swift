@@ -19,7 +19,6 @@
 //  Copyright © 2023 Ignacio Juarez. All rights reserved.
 
 import Foundation
-import Cocoa
 import CoreVideo
 
 // A struct representing a display mode.
