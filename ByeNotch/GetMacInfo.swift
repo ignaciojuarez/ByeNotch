@@ -81,7 +81,7 @@ public func getDefaultResolution() -> (width: String, height: String) {
     
     // M2 MacBook Pros
     case "Mac14,9", "Mac14,5": // 14-inch M2 MacBook Pro
-        return ("1523", "982")
+        return ("1512", "982")
     case "Mac14,10", "Mac14,6": // 16-inch M2 MacBook Pro
         return ("1728", "1117")
                 
@@ -89,7 +89,7 @@ public func getDefaultResolution() -> (width: String, height: String) {
     case "Mac15,7", "Mac15,9", "Mac15,11": // 16-inch M3 MacBook Pro
         return ("1728", "1117")
     case "Mac15,3", "Mac15,6", "Mac15,8", "Mac15,10": // 14-inch M3 MacBook Pro with Thunderbolt 4 ports
-        return ("1523", "982")
+        return ("1512", "982")
         
     default:
         return ("No", "Match")
@@ -118,7 +118,7 @@ public func getModdedResolution() -> (width: String, height: String) {
     
     // M2 MacBook Pros
     case "Mac14,9", "Mac14,5": // 14-inch M2 MacBook Pro
-        return ("1523", "945")
+        return ("1512", "945")
     case "Mac14,10", "Mac14,6": // 16-inch M2 MacBook Pro
         return ("1728", "1080")
                 
@@ -126,7 +126,7 @@ public func getModdedResolution() -> (width: String, height: String) {
     case "Mac15,7", "Mac15,9", "Mac15,11": // 16-inch M3 MacBook Pro
         return ("1728", "1080")
     case "Mac15,3", "Mac15,6", "Mac15,8", "Mac15,10": // 14-inch M3 MacBook Pro with Thunderbolt 4 ports
-        return ("1523", "945")
+        return ("1512", "945")
         
     default:
         return ("No", "Match")
