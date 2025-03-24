@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -108,7 +108,6 @@
 				};
 			};
 			buildConfigurationList = 4F21748D2A59D7AA00C51E91 /* Build configuration list for PBXProject "ByeNotch" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -116,6 +115,7 @@
 				Base,
 			);
 			mainGroup = 4F2174892A59D7AA00C51E91;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 4F2174932A59D7AA00C51E91 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -276,7 +276,7 @@
 				CODE_SIGN_ENTITLEMENTS = ByeNotch/ByeNotch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2.1;
+				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ByeNotch/Preview Content\"";
 				DEVELOPMENT_TEAM = KNMMQQRY56;
@@ -308,7 +308,7 @@
 				CODE_SIGN_ENTITLEMENTS = ByeNotch/ByeNotch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2.1;
+				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ByeNotch/Preview Content\"";
 				DEVELOPMENT_TEAM = KNMMQQRY56;
