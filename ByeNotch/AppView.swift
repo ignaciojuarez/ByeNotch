@@ -2,15 +2,17 @@ import SwiftUI
 
 struct AppView: View {
     
-    @State var isNotchRemoved = false
+    @State var isNotchHidden = false
     @Environment(\.openURL) var openURL
     
     var body: some View {
         
-        Button(action: {
-        isNotchRemoved.toggle()
-        RemoveNotch()
-        }) { Text(isNotchRemoved ? "Hi Notch" : "Bye Notch")}
+        Button() {
+            isNotchHidden.toggle()
+            NotchManager.shared.toggleNotch(hideNotch: isNotchHidden)
+        } label: {
+            Text(isNotchHidden ? "Hi Notch" : "Bye Notch")
+        }
             
         Divider()
             
@@ -21,13 +23,6 @@ struct AppView: View {
     func About() {
         if let url = URL(string: "https://www.ignaciojuarez.com") {
             openURL(url)
-        }
-    }
-    
-    func RemoveNotch() {
-        let result = isNotchRemoved ? getModdedResolution() : getDefaultResolution()
-        if result != ("No", "Match") {
-            changeResolution(width: result.0, height: result.1)
         }
     }
     

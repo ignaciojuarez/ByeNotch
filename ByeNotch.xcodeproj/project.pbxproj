@@ -11,8 +11,7 @@
 		4F2174982A59D7AA00C51E91 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2174972A59D7AA00C51E91 /* AppView.swift */; };
 		4F21749A2A59D7AB00C51E91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F2174992A59D7AB00C51E91 /* Assets.xcassets */; };
 		4F21749D2A59D7AB00C51E91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F21749C2A59D7AB00C51E91 /* Preview Assets.xcassets */; };
-		4F2174A52A59D85400C51E91 /* GetMacInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2174A42A59D85400C51E91 /* GetMacInfo.swift */; };
-		4F2174A72A59D85B00C51E91 /* DisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2174A62A59D85B00C51E91 /* DisplayController.swift */; };
+		4F439E712D920028007F2EB1 /* NotchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F439E702D920025007F2EB1 /* NotchManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +21,7 @@
 		4F2174992A59D7AB00C51E91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F21749C2A59D7AB00C51E91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4F21749E2A59D7AB00C51E91 /* ByeNotch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ByeNotch.entitlements; sourceTree = "<group>"; };
-		4F2174A42A59D85400C51E91 /* GetMacInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMacInfo.swift; sourceTree = "<group>"; };
-		4F2174A62A59D85B00C51E91 /* DisplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayController.swift; sourceTree = "<group>"; };
+		4F439E702D920025007F2EB1 /* NotchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +54,9 @@
 		4F2174942A59D7AA00C51E91 /* ByeNotch */ = {
 			isa = PBXGroup;
 			children = (
+				4F439E702D920025007F2EB1 /* NotchManager.swift */,
 				4F2174952A59D7AA00C51E91 /* ByeNotchApp.swift */,
 				4F2174972A59D7AA00C51E91 /* AppView.swift */,
-				4F2174A42A59D85400C51E91 /* GetMacInfo.swift */,
-				4F2174A62A59D85B00C51E91 /* DisplayController.swift */,
 				4F2174992A59D7AB00C51E91 /* Assets.xcassets */,
 				4F21749E2A59D7AB00C51E91 /* ByeNotch.entitlements */,
 				4F21749B2A59D7AB00C51E91 /* Preview Content */,
@@ -103,7 +100,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					4F2174912A59D7AA00C51E91 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -145,10 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F2174A72A59D85B00C51E91 /* DisplayController.swift in Sources */,
+				4F439E712D920028007F2EB1 /* NotchManager.swift in Sources */,
 				4F2174982A59D7AA00C51E91 /* AppView.swift in Sources */,
 				4F2174962A59D7AA00C51E91 /* ByeNotchApp.swift in Sources */,
-				4F2174A52A59D85400C51E91 /* GetMacInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,9 +184,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -248,9 +246,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -277,6 +277,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2.1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ByeNotch/Preview Content\"";
 				DEVELOPMENT_TEAM = KNMMQQRY56;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -308,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2.1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ByeNotch/Preview Content\"";
 				DEVELOPMENT_TEAM = KNMMQQRY56;
 				ENABLE_HARDENED_RUNTIME = YES;
