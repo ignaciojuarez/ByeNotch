@@ -234,33 +234,61 @@ public class NotchManager {
         let model = getMacModelIdentifier()
         
         switch model {
-        // M2 MacBook Air
+            
+        // MARK: - MacBook Air [ M2 -> M4 ]
+            
+        // M2 MacBook Air (13-inch)
         case "Mac14,2": return ("1470", "956")
+            
+        // M2 MacBook Air (15-inch)
         case "Mac14,15": return ("1680", "1050")
             
+        // M3 MacBook Air (13-inch)
+        case "Mac15,12": return ("1470", "956")
+            
+        // M3 MacBook Air (15-inch)
+        case "Mac15,13": return ("1680", "1050")
+            
         // M4 MacBook Air (13-inch)
-        case "Mac16,1", "Mac16,2": return ("1470", "956")
+        case "Mac16,12": return ("1470", "956")
             
         // M4 MacBook Air (15-inch)
-        case "Mac16,3", "Mac16,4": return ("1680", "1050")
+        case "Mac16,13": return ("1680", "1050")
             
-        // M1/M2/M3 MacBook Pro 14"
-        case "MacBookPro18,3", "MacBookPro18,4", "MacBookPro14,5", "MacBookPro14,9",
-             "Mac14,9", "Mac14,5", "Mac15,3", "Mac15,6", "Mac15,8", "Mac15,10":
+        // MARK: - MacBook Pro [ M2 -> M4 ]
+            
+        // M4 MacBook Pro (14-inch)
+        case "Mac16,1", "Mac16,6", "Mac16,8":
             return ("1512", "982")
             
-        // M4 MacBook Pro 14"
-        case "Mac16,5", "Mac16,6", "Mac16,7":
+        // M4 MacBook Pro (16-inch)
+        case "Mac16,7", "Mac16,5":
+            return ("1728", "1117")
+            
+        // M3 MacBook Pro (14-inch)
+        case "Mac15,3", "Mac15,6", "Mac15,8", "Mac15,10":
             return ("1512", "982")
             
-        // M1/M2/M3 MacBook Pro 16"
-        case "MacBookPro18,1", "MacBookPro18,2", "MacBookPro14,10", "MacBookPro14,6",
-             "Mac14,10", "Mac14,6", "Mac15,7", "Mac15,9", "Mac15,11":
+        // M3 MacBook Pro (16-inch)
+        case "Mac15,7", "Mac15,9", "Mac15,11":
             return ("1728", "1117")
             
-        // M4 MacBook Pro 16"
-        case "Mac16,8", "Mac16,9", "Mac16,10":
+        // M2 MacBook Pro (14-inch)
+        case "Mac14,5", "Mac14,9":
+            return ("1512", "982")
+            
+        // M2 MacBook Pro (16-inch)
+        case "Mac14,6", "Mac14,10":
             return ("1728", "1117")
+            
+        // M1 MacBook Pro (14-inch)
+        case "MacBookPro18,3", "MacBookPro18,4":
+            return ("1512", "982")
+            
+        // M1 MacBook Pro (16-inch)
+        case "MacBookPro18,1", "MacBookPro18,2":
+            return ("1728", "1117")
+            
             
         default:
             // If we can't determine from model, try to get from current if it seems like default
@@ -277,32 +305,59 @@ public class NotchManager {
         let model = getMacModelIdentifier()
         
         switch model {
-        // M2 MacBook Air
+            
+        // MARK: - MacBook Air [ M2 -> M4 ]
+            
+        // M2 MacBook Air (13-inch)
         case "Mac14,2": return ("1470", "918")
+            
+        // M2 MacBook Air (15-inch)
         case "Mac14,15": return ("1680", "1012")
             
+        // M3 MacBook Air (13-inch)
+        case "Mac15,12": return ("1470", "918")
+            
+        // M3 MacBook Air (15-inch)
+        case "Mac15,13": return ("1680", "1012")
+            
         // M4 MacBook Air (13-inch)
-        case "Mac16,1", "Mac16,2": return ("1470", "918")
+        case "Mac16,12": return ("1470", "918")
             
         // M4 MacBook Air (15-inch)
-        case "Mac16,3", "Mac16,4": return ("1680", "1012")
+        case "Mac16,13": return ("1680", "1012")
             
-        // M1/M2/M3 MacBook Pro 14"
-        case "MacBookPro18,3", "MacBookPro18,4", "MacBookPro14,5", "MacBookPro14,9",
-             "Mac14,9", "Mac14,5", "Mac15,3", "Mac15,6", "Mac15,8", "Mac15,10":
+        // MARK: - MacBook Pro [ M2 -> M4 ]
+            
+        // M4 MacBook Pro (14-inch)
+        case "Mac16,1", "Mac16,6", "Mac16,8":
             return ("1512", "945")
             
-        // M4 MacBook Pro 14"
-        case "Mac16,5", "Mac16,6", "Mac16,7":
-            return ("1512", "945")
-            
-        // M1/M2/M3 MacBook Pro 16"
-        case "MacBookPro18,1", "MacBookPro18,2", "MacBookPro14,10", "MacBookPro14,6",
-             "Mac14,10", "Mac14,6", "Mac15,7", "Mac15,9", "Mac15,11":
+        // M4 MacBook Pro (16-inch)
+        case "Mac16,7", "Mac16,5":
             return ("1728", "1080")
             
-        // M4 MacBook Pro 16"
-        case "Mac16,8", "Mac16,9", "Mac16,10":
+        // M3 MacBook Pro (14-inch)
+        case "Mac15,3", "Mac15,6", "Mac15,8", "Mac15,10":
+            return ("1512", "945")
+            
+        // M3 MacBook Pro (16-inch)
+        case "Mac15,7", "Mac15,9", "Mac15,11":
+            return ("1728", "1080")
+            
+        // M2 MacBook Pro (14-inch)
+        case "Mac14,5", "Mac14,9":
+            return ("1512", "945")
+            
+        // M2 MacBook Pro (16-inch)
+        case "Mac14,6", "Mac14,10":
+            return ("1728", "1080")
+            
+        // M1 MacBook Pro (14-inch)
+        case "MacBookPro18,3", "MacBookPro18,4":
+            return ("1512", "945")
+            
+        // M1 MacBook Pro (16-inch)
+        case "MacBookPro18,1", "MacBookPro18,2":
             return ("1728", "1080")
             
         default: return ("No", "Match")
