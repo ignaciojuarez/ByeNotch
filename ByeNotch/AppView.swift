@@ -9,7 +9,7 @@ struct AppView: View {
         
         Button() {
             isNotchHidden.toggle()
-            NotchManager.shared.toggleNotch(hideNotch: isNotchHidden)
+            Task(priority: .high) { await NotchManager.shared.toggleNotch(hideNotch: isNotchHidden) }
         } label: {
             Text(isNotchHidden ? "Hi Notch" : "Bye Notch")
         }

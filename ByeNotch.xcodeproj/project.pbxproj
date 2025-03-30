@@ -12,6 +12,7 @@
 		4F21749A2A59D7AB00C51E91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F2174992A59D7AB00C51E91 /* Assets.xcassets */; };
 		4F21749D2A59D7AB00C51E91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F21749C2A59D7AB00C51E91 /* Preview Assets.xcassets */; };
 		4F439E712D920028007F2EB1 /* NotchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F439E702D920025007F2EB1 /* NotchManager.swift */; };
+		4F439E8F2D95F7AF007F2EB1 /* MacDisplayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F439E8E2D95F7AA007F2EB1 /* MacDisplayInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4F21749C2A59D7AB00C51E91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4F21749E2A59D7AB00C51E91 /* ByeNotch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ByeNotch.entitlements; sourceTree = "<group>"; };
 		4F439E702D920025007F2EB1 /* NotchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchManager.swift; sourceTree = "<group>"; };
+		4F439E8E2D95F7AA007F2EB1 /* MacDisplayInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDisplayInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		4F2174942A59D7AA00C51E91 /* ByeNotch */ = {
 			isa = PBXGroup;
 			children = (
+				4F439E8E2D95F7AA007F2EB1 /* MacDisplayInfo.swift */,
 				4F439E702D920025007F2EB1 /* NotchManager.swift */,
 				4F2174952A59D7AA00C51E91 /* ByeNotchApp.swift */,
 				4F2174972A59D7AA00C51E91 /* AppView.swift */,
@@ -144,6 +147,7 @@
 			files = (
 				4F439E712D920028007F2EB1 /* NotchManager.swift in Sources */,
 				4F2174982A59D7AA00C51E91 /* AppView.swift in Sources */,
+				4F439E8F2D95F7AF007F2EB1 /* MacDisplayInfo.swift in Sources */,
 				4F2174962A59D7AA00C51E91 /* ByeNotchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
