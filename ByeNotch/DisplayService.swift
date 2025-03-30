@@ -1,5 +1,5 @@
 //
-//  MacDisplayInfo.swift
+//  DisplayService.swift
 //  ByeNotch
 //
 //  Created by Ignacio Juarez on 3/27/25.
@@ -11,13 +11,13 @@ public struct DisplayResolution {
     public let supportsProMotion: Bool
 }
 
-// MARK: - MacDisplayInfoProvider
+// MARK: - DisplayService
 
 /// Class to provide MacDisplayInfo for different Mac models
 actor DisplayService {
     
     /// Get display info for a specific Mac model
-    public func getDisplayInfo(for macModelId: String) -> DisplayResolution? {
+    public func getDisplayInfoWithMacId(for macModelId: String) -> DisplayResolution? {
         switch macModelId {
             // MARK: - MacBook Air [ M2 -> M4 ]
             
@@ -140,7 +140,7 @@ actor DisplayService {
         }
     }
     
-    public func getAutomaticDisplayInfo(defaultResolution: (width: String, height: String)) -> DisplayResolution? {
+    public func getDisplayInfoWithResolution(originalResolution: (width: String, height: String)) -> DisplayResolution? {
         let resolutionMap: [((String, String), (String, String), Bool)] = [
             (("1470", "956"), ("1470", "918"), false),  // MacBook Air 13"
             (("1680", "1050"), ("1680", "1012"), false), // MacBook Air 15"
@@ -149,7 +149,7 @@ actor DisplayService {
         ]
         
         for (defaultRes, moddedRes, supportsProMotion) in resolutionMap {
-            if defaultRes == defaultResolution {
+            if defaultRes == originalResolution {
                 return DisplayResolution(
                     defaultResolution: defaultRes,
                     moddedResolution: moddedRes,
