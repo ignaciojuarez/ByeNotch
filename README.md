@@ -23,7 +23,7 @@ Say bye to **Scale to fit below built-in camera** -> [Download on AppStore](http
 * Most Emulators
 
 ## Support
-Devices: M1 M2 and M3 **Apple Silicon** MacBooks (notch)
+Devices: **Apple Silicon** MacBooks (notch)
 
 ## Author
 Coded by [@ignaciojuarez](https://github.com/ignaciojuarez)
