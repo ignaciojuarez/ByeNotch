@@ -13,7 +13,7 @@ struct AppView: View {
             isNotchHidden.toggle()
             
             Task(priority: .high) {
-                await notch.toggleNotch(hideNotch: isNotchHidden)
+                try await notch.toggleNotch(hideNotch: isNotchHidden)
             }
         } label: {
             Text(isNotchHidden ? "Hi Notch" : "Bye Notch")
