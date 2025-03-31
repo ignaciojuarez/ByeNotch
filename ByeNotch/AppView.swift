@@ -1,15 +1,20 @@
 import SwiftUI
 
+@MainActor
 struct AppView: View {
     
     @State var isNotchHidden = false
     @Environment(\.openURL) var openURL
+    let notch = NotchManager()
     
     var body: some View {
         
         Button() {
             isNotchHidden.toggle()
-            Task(priority: .high) { await NotchManager.shared.toggleNotch(hideNotch: isNotchHidden) }
+            
+            Task(priority: .high) {
+                await notch.toggleNotch(hideNotch: isNotchHidden)
+            }
         } label: {
             Text(isNotchHidden ? "Hi Notch" : "Bye Notch")
         }
@@ -32,10 +37,6 @@ struct AppView: View {
     
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        AppView()
-    }
+#Preview {
+    AppView()
 }
-
-

@@ -5,7 +5,7 @@
 //  Created by Ignacio Juarez on 3/27/25.
 //
 
-public struct DisplayResolution {
+public struct DisplayResolution: Sendable {
     public let defaultResolution: (width: String, height: String)
     public let moddedResolution: (width: String, height: String)
     public let supportsProMotion: Bool
@@ -15,6 +15,15 @@ public struct DisplayResolution {
 
 /// Class to provide MacDisplayInfo for different Mac models
 actor DisplayService {
+    
+    public func getDisplayInfo(for macModelId: String, originalResolution: (width: String, height: String)?) async -> DisplayResolution? {
+        if let info = getDisplayInfoWithMacId(for: macModelId) {
+            return info
+        } else if let originalResolution {
+            return getDisplayInfoWithResolution(originalResolution: originalResolution)
+        }
+        return nil
+    }
     
     /// Get display info for a specific Mac model
     public func getDisplayInfoWithMacId(for macModelId: String) -> DisplayResolution? {
